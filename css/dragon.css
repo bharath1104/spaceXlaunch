@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section,
+main {
+
+    margin-top: 0;
+}
+
+.container {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.backimg {
+    background-image: url(../para.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+
+
+}
+
+.navbar {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 18vh;
+    align-items: center;
+
+
+}
+
+.logo {
+    width: 20%;
+    cursor: pointer;
+    padding-left: 5%;
+}
+
+nav {
+    flex: 1;
+    padding-left: 50px;
+
+}
+
+nav ul {
+    margin-top: 30px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-weight: 790;
+    font-size: 15px;
+
+}
+
+.icon a:after {
+    content: '';
+    height: 2px;
+    position: absolute;
+    background-color: white;
+    width: 0%;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s ease all;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+.content {
+    padding-left: 3%;
+    transform: translateY(140%);
+}
+
+.content,
+h3,
+h1,
+p {
+    color: white;
+}
+
+.content h2 {
+    font-size: 1.234rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+
+}
+
+.content h1 {
+    font-size: 2.6rem;
+    padding-bottom: 8px;
+}
+
+.content h4 {
+    font-size: 1.0rem;
+    padding-top: 20px;
+    margin-left: 0px;
+    font-weight: 100;
+
+}
+
+#button {
+    padding: 17px 39px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: 0.3s ease all;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#button:hover {
+    background: rgb(235, 223, 223);
+    color: black;
+}
+
+section {
+
+    padding: 10px;
+}
+
+.content-center {
+    width: 90%;
+    height: auto;
+    margin: 75px auto;
+    max-width: 960px;
+    margin-left: 15%;
+
+}
+
+p {
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+
+}
+
+.para {
+    margin-bottom: 20px;
+    font-size: .9987rem;
+
+}
+
+.name,
+img {
+    width: 90%;
+    height: auto;
+    cursor: pointer;
+}
+
+.column {
+    display: flex;
+}
+
+.name h3 {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 530;
+    top: 9px;
+}
+
+.content-center2 {
+    width: 90%;
+    height: auto;
+    margin: 75px auto;
+    max-width: 960px;
+    margin-left: 15%;
+    margin-top: 10%;
+
+}
+
+.content-center2
+p {
+    font-weight: lighter;
+    font-size: .9987rem;
+}
+
+.group {
+    display: flex;
+    column-gap: 10%;
+}
+
+.group img {
+    width: 55%;
+    left: 2%;
+}
+
+.grp-content,
+h1 {
+    font-size: 2.6rem;
+}
+.grp-content,
+p{
+    font-size: 1.1rem;
+}
+.grp-content,
+h3 {
+    font-size: 1.4rem;
+    text-align: start;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    font-weight: 100;
+}
+
+.grp-content {
+    margin-top: 23%;
+}
+
+.space img {
+    left: 5%;
+}
+
+.dragon {
+    display: flex;
+}
+
+.dragon img {
+    width: 36%;
+}
+
+.drg {
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+.drg h1 {
+    margin-bottom: 20px;
+}
+
+.drg p {
+    font-size: 15px;
+    font-weight: 100;
+}
+footer{
+    padding: 10px;
+    background-color: black;
+}
+.social{
+ display:flex;
+ margin: 10px;
+}
+.social span{
+color: gray;
+}
+.social, .sml{
+color: white;
+text-decoration: none;
+margin: 10px;
+align-items: center;
+justify-content: center;
+font-size: .8rem;
+cursor: pointer;
+transition: 0.3s ease all;
+}
+.social, .sml:hover{
+color: gray;
+}
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+right: 0;
+background-color: black;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 20px;
+color: #818181;
+display: block;
+transition: 0.3s ease ll;
+}
+
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 29px;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+span{
+right:5%;
+color: white;
+display: block; 
+}
+
+.reveal{
+position: relative;
+transform: translateY(150px);
+opacity: 0;
+transition:all 2s ease;
+}
+.reveal.active{
+transform: translateY(0px);
+opacity: 1;
+}
+
+.back{
+    overflow: hidden;
+    left: 10%;
+}
+@media screen and (max-width:600px) {
+
+    nav ul li {
+        display: none;
+    }
+
+    .logo {
+        width: 45%;
+        cursor: pointer;
+        margin-left: 26%;
+        position: fixed;
+       
+    }
+
+    .content-center,
+    .para {
+        text-align: start;
+        justify-content: center;
+        margin: 45px auto;
+        margin-right: 50px;
+        left: 5%;
+    }
+
+    .column {
+        display: grid;
+
+    }
+
+    .column,
+    .name,
+    img {
+        left: 11px;
+    }
+
+    .content {
+        padding-left: 6%;
+        transform: translateY(150%);
+
+    }
+
+    .content h1 {
+        font-size: 1.9rem;
+    }
+
+    .content-center2 {
+        margin: 55px auto;
+        left: 10px;
+
+    }
+
+    .container {
+        text-align: start;
+        justify-content: center;
+    }
+
+    .name h3 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .grp-content {
+        left: 10px;
+    }
+
+    .grp-content,
+    h1,
+    h3,
+    p {
+
+        text-align: start;
+    }
+
+    .grp-content,
+    h3 {
+        font-size: 1.1rem;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .grp-content p {
+        font-size: .86rem;
+        font-weight: lighter;
+    }
+
+    .grp-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .group {
+        display: grid;
+
+    }
+
+    .grp-content {
+
+        line-height: .6;
+    }
+
+    .group img {
+        width: 65%;
+        margin-left: 60px;
+
+
+    }
+
+    .dragon {
+        display: grid;
+    }
+
+    .dragon img {
+        width: 80%;
+        left: 10%;
+    }
+
+    .drg {
+        margin-left: 10px;
+    }
+
+    .drg p {
+        font-size: 15px;
+    }
+    .drg h1{
+        left: 1px;
+    }
+    
+    .social{
+        display: grid;
+        
+    }
+    .info{
+        background-image:url(../infographic123.png);
+    }
+    .social .large{
+       
+       margin-left: 10px;
+   }
+   .social span{
+       left: 2px;
+   }
+
+
+
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falcon9</title>
+    <link rel="icon" href="123.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/falcon9.css">
+</head>
+
+<style>
+
+    
+</style>
+
+<body>
+    <div class="container">
+        <div class="backimg">
+            <div class="navbar">
+
+                <img src="logo.png"  onclick="myfunction()" class="logo">
+                <nav>
+                    <ul class="icon">
+          
+
+                        <li><a href="#">Falcon 9</a></li>
+                        <li><a href="#">Falcon Heavy</a></li>
+                        <li><a href="#">Dragon</a></li>
+                        <li><a href="#">Startship</a></li>
+                        <li><a href="#">Human spaceflighth</a></li>
+                        <li><a href="#">Rideshare</a></li>
+                    </ul>
+                </nav>
+
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <li><a href="#">Falcon 9</a></li>
+                    <li><a href="#">Falcon Heavy</a></li>
+                    <li><a href="#">Dragon</a></li>
+                    <li><a href="#">Startship</a></li>
+                    <li><a href="#">Human spaceflighth</a></li>
+                    <li><a href="#">Rideshare</a></li>
+                  </div>
+                  <span class="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
+            </div>
+            <div class="content-head">
+                <h1 class="reveal">FALCON 9</h1>
+                <h2 class="reveal"> FIRST ORBITAL CLASS ROCKET CAPABLE OF REFLIGHT</h2>
+                
+            </div>
+           </div>
+           <div class="falcon">
+               <img src="falcon flight.jpg">
+               <h2 class="reveal">Falcon 9  in flight</h2>
+           </div>
+         
+      
+           </div>
+           <footer>
+            <div class="social">
+             <large class="large">Front-End developer <br>Bharath varma</large>
+             <p class="sml"><span>SPACEX @ 2021</span></p></span>
+             <p  class="sml">TWITTER</p>
+             <a href="https://www.youtube.com/spacex" rel="noopener" target="_blank" class="sml">YOUTUBE</a>
+             <p class="sml">LINKEDIN</p>
+             <p class="sml">PRIVACY POLICY</p>
+         
+            </div>
+        </footer>
+            
+
+
+    <script>         
+       function myfunction() {
+        window.open("index.html");
+        }
+        window.addEventListener('scroll',reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+        
+        
+            for(i=0;i<reveals.length;i++){
+                var windowheight =window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+        
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active')
+        
+                }
+                else
+                {
+                 reveals[i].classList.remove('active')
+        
+                }
+            }
+        }
+
+
+
+
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+</body>
+</html>

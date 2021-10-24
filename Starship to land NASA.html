@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starship land NASA</title>
+    <link rel="icon" href="123.jpg">
+    <link rel="stylesheet" href="css/land.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="navbar">
+
+            <img src="logo.png" id="home" onclick="myfunction()" class="logo">
+            <nav>
+                <ul class="icon">
+
+                    <li><a href="falcon9.html">Falcon 9</a></li>
+                    <li><a href="#">Falcon Heavy</a></li>
+                    <li><a href="#">Dragon</a></li>
+                    <li><a href="#">Startship</a></li>
+                    <li><a href="#">Human spaceflighth</a></li>
+                    <li><a href="#">Rideshare</a></li>
+                </ul>
+            </nav>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+                <li><a href="falcon9.html">Falcon 9</a></li>
+                <li><a href="#">Falcon Heavy</a></li>
+                <li><a href="#">Dragon</a></li>
+                <li><a href="#">Startship</a></li>
+                <li><a href="#">Human spaceflighth</a></li>
+                <li><a href="#">Rideshare</a></li>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
+        </div>
+        <div class="backimg">
+        </div>
+        <section>
+            <h3 class="aug reveal">APRIL 16, 2021</h3>
+
+            <h1 class="crs reveal">STARSHIP TO LAND NASA <br> ASTRONAUTS ON THE MOON</h1>
+            <div class="split reveal">
+                <p>Only 24 humans have been to the Moon, and no one has been back since 1972. Today, NASA announced they
+                    have selected Starship to land the first astronauts on the lunar surface since the Apollo program.
+                    We are humbled to help NASA usher in a new era of human space exploration.<br><br><br>
+
+                    Together, NASA and SpaceX have successfully executed similarly bold and innovative partnerships,
+                    including restoring America’s ability to launch astronauts to orbit and return them safely home. We
+                    will build upon our shared accomplishments, and leverage years of close technical collaboration to
+                    return to the Moon. In doing so, we will lay the groundwork for human exploration to Mars and
+                    beyond.<br><br><br>
+
+                    Sustaining a human presence on the Moon will require the safe and affordable transportation of crew
+                    and significant amounts of cargo. SpaceX’s Starship spacecraft and Super Heavy rocket represent an
+                    integrated and fully reusable launch, propellant delivery, rendezvous, and planetary lander system
+                    with robust capabilities and safety features uniquely designed to deliver these essential building
+                    blocks.</p>
+                <p>Flying between lunar orbit and the surface of the Moon, Starship will carry crew and all of the
+                    supplies, equipment, and science payloads needed for extensive surface exploration. Building off the
+                    safety and reliability of Dragon and Falcon, Starship will feature proven avionics, guidance and
+                    navigation systems, autonomous rendezvous, docking and precision landing capabilities, as well as
+                    thermal protection, and a spacious cabin with familiar displays and interfaces utilized on
+                    Dragon.<br><br><br>
+
+                    SpaceX is rapidly advancing Starship development, drawing on an extensive history of launch vehicle
+                    and engine development programs. Since January 2020, SpaceX has built 10 Starship prototypes, with
+                    production and fidelity accelerating on each build. SpaceX has manufactured and tested more than 60
+                    of Starship’s Raptor engines, accumulating nearly 30,000 seconds of total test time over 567 engine
+                    starts, including on multiple Starship static fires and flight tests. We have conducted six
+                    suborbital flight tests, including two 150-m hops and four high-altitude flights. SpaceX has also
+                    built a full-size Super Heavy booster as part of a pathfinder effort, and currently has five
+                    vehicles in production.<br><br><br>
+
+                    We are honored to be a part of NASA’s Artemis Program to safely land the first woman and next man on
+                    the surface of the Moon, as the first of many, many more people to follow.</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="social">
+            <large class="large">Front-End developer <br>Bharath varma</large>
+            <p class="sml"><span>SPACEX @ 2021</span></p></span>
+            <p class="sml">TWITTER</p>
+            <a href="https://www.youtube.com/spacex" rel="noopener" target="_blank" class="sml">YOUTUBE</a>
+            <p class="sml">LINKEDIN</p>
+            <p class="sml">PRIVACY POLICY</p>
+
+        </div>
+    </footer>
+    <script>
+
+
+function myfunction() {
+           window.open("index.html");
+}
+
+
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+
+            for (i = 0; i < reveals.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active')
+
+                }
+                else {
+                    reveals[i].classList.remove('active')
+
+                }
+            }
+        }
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>

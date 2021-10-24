@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="123.jpg">
+</head>
+<body>
+     <div class="container">
+        <div class="backimg">
+            <div class="navbar">
+                <img src="logo.png" onclick="myfunction()"class="logo">
+                <nav>
+                    <ul class="icon">
+            
+                             <li><a href="falcon9.html">Falcon 9</a></li>
+                             <li><a href="#">Falcon Heavy</a></li>
+                             <li><a href="#">Dragon</a></li>
+                             <li><a href="#">Startship</a></li>
+                             <li><a href="#">Human spaceflighth</a></li>
+                             <li><a href="#">Rideshare</a></li>
+                    </ul>
+                </nav>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <li><a href="falcon9.html">Falcon 9</a></li>
+                    <li><a href="#">Falcon Heavy</a></li>
+                    <li><a href="#">Dragon</a></li>
+                    <li><a href="#">Startship</a></li>
+                    <li><a href="#">Human spaceflighth</a></li>
+                    <li><a href="#">Rideshare</a></li>
+                  </div>
+                  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+            </div>
+            <div class="content">
+                <h3 class="reveal">COMPLETED MISSION</h3>
+                    <h1 class="reveal">DRAGON RETURNS TO <br>EARTH</h1>
+                    <h4 class="reveal">Dragon completes worls's first all-civilian mission to orbit</h4>
+                    <div class="btn reveal">
+                        <br><br><a href="dragon.html" id="button">REWATCH</a>
+                    </div>
+                   
+            </div>
+        </div>
+        <section>
+            <img src="2.jpg" class="img2">
+            <div class="second">
+                <h3 class="reveal">RECENT LAUNCH</h3>
+                <h1 class="reveal">CRS-23 MISSION</h1>
+                <div class="btn reveal">
+                    <br><br><a href="crs.html" id="button">REWATCH</a>
+                </div>
+            
+              </div>
+        </section>
+
+        </div>
+
+
+      <main>
+          <div class="rocket">
+              <img src="3.jpg" alt=""class="img3">
+              <div class="content3">    
+              <h1 class="reveal">STARSHIP TO LAND<br>NASA ASTRONAUTS ON<br> THE MOON</h1>
+              <div class="btn reveal">
+                <br><br><a href="Starship to land NASA.html" id="button">LEARN MORE</a>
+              </div>
+              
+              </div>
+          </div>
+      </main>
+       <footer>
+           <div class="social">
+            <large class="large">Front-End developer <br>Bharath varma</large>
+            <p class="sml"><span>SPACEX @ 2021</span></p></span>
+            <p  class="sml">TWITTER</p>
+            <a href="https://www.youtube.com/spacex" rel="noopener" target="_blank" class="sml">YOUTUBE</a>
+            <p class="sml">LINKEDIN</p>
+            <p class="sml">PRIVACY POLICY</p>
+        
+        
+           </div>
+       </footer>
+       
+
+       <script>
+           function myfunction() {
+           window.open(".html");
+}
+           window.addEventListener('scroll',reveal);
+
+           function reveal(){
+               var reveals = document.querySelectorAll('.reveal');
+
+
+               for(i=0;i<reveals.length;i++){
+                   var windowheight =window.innerHeight;
+                   var revealtop = reveals[i].getBoundingClientRect().top;
+                   var revealpoint = 150;
+
+                   if(revealtop < windowheight - revealpoint){
+                       reveals[i].classList.add('active')
+
+                   }
+                   else
+                   {
+                    reveals[i].classList.remove('active')
+
+                   }
+               }
+           }
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+   
+    </body>
+</html>
