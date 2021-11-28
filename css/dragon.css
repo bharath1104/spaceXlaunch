@@ -309,9 +309,10 @@ font-size: 36px;
 margin-left: 50px;
 }
 span{
-right:5%;
-color: white;
-display: block; 
+    margin-right: 5%;
+    color: white;
+    display: block;
+    
 }
 
 .reveal{

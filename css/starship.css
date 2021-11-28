@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:url(../images/starship.jpg);
+   background-position: top;
+  
+
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s ease all;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 29px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+span{
+    right: 5%;
+    color: white;
+    display: block;
+    position: fixed;
+    
+}
+
+  
+
+    .navbar {
+        display:flex;
+
+        margin: auto;
+        width: 100%;
+        height: 18vh;
+        align-items: center;
+
+
+    }
+
+    .logo {
+        width: 20%;
+        cursor: pointer;
+        padding-left: 5%;
+       
+    }
+
+    nav {
+        flex: 1;
+        padding-left: 50px;
+
+    }
+
+    nav ul {
+        margin-top: 30px;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        position: relative;
+        font-weight: 790;
+        font-size: 15px;
+
+    }
+
+    .icon a:after {
+        content: '';
+        height: 2px;
+        position: absolute;
+        background-color: white;
+        width: 0%;
+        left: 0;
+        bottom: -8px;
+        transition: 0.3s ease all;
+    }
+
+    a:hover:after {
+        width: 100%;
+    }
+    .content{
+        color: white;
+        line-height: 1.2;
+        padding-left: 5%;
+        padding-top: 15%;
+        
+    }
+    .content p{
+        padding-bottom: 10px;
+        font-size: 17px;
+    }
+    .content h1{
+        font-size: 2.2rem;
+    }
+    .content a{
+        color: white;
+        text-decoration: none;
+        border: 1px solid white;
+        padding: 20px 30px 20px 30px;
+        font-size: 12px;
+        transition: 0.3s ease
+    }
+    .content a:hover{
+            background-color:white;
+            color: black;
+         
+            
+    }
+    .middle{
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+    }
+    .middle p{
+       
+        color: white;
+        font-weight: 100;
+        font-size: 15.6px;
+        line-height: 1.8;
+    }
+    .para{
+        column-count: 2;
+        padding:50px;
+        padding-top: 10%;
+    }
+    #id{
+
+        background-color: black;
+        height: 120vh;
+        width: 100%;
+    }
+    .split img{
+        width: 40%;
+        margin-left: 5%;
+    }
+    .split{
+        display: flex;
+        column-gap: 200px;
+    }
+    .split p{
+        color: white;
+      font-weight: 100;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+    .split h1{
+        color: white;
+        font-size: 2.9rem;
+        text-align: start;
+        justify-content: center;
+    }
+    .content2 a{
+        color: white;
+        text-decoration: none;
+        border: 1px solid white;
+        padding: 20px 30px 20px 30px;
+        font-size: 12px;
+        transition: 0.3s ease
+    }
+    .content2 a:hover{
+            background-color:white;
+            color: black;
+    }
+    .content2 p{
+        padding-bottom: 10%;
+    }
+    footer{
+        padding: 10px;
+        background-color: black;
+    }
+    .social{
+     display:flex;
+     margin: 10px;
+    }
+    .social span{
+    color: gray;
+    }
+    .social, .sml{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    }
+    .social, .sml:hover{
+    color: gray;
+    }
+    .img_flight{
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+    }
+    .img_flight p {
+        color: white;
+        text-align: center;
+        font-weight: 100;
+        font-size: 15px;
+        padding-top: 10%;
+    }
+    .guid{
+        width: 100%;
+        height: 50vh;
+    }
+    .guid p{
+        text-align: center;
+       color: gray;
+        padding-top: 5%;
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 1.9;
+      
+    
+    }
+    large{
+        color: white;
+        cursor: pointer;
+        transition: 0.3s ease all;
+    }
+    large:hover{
+        color: rgb(209, 198, 198);
+    }
+    .guid{
+        background-color: black;
+    }
+    #vertical-line{
+        width: 1px;
+        height: 100px;
+        background-color: white;
+        margin-left: 50%;
+    
+    }.file{
+        text-align: center;
+        padding-top: 4%;
+       
+    }
+    .file a{
+        color: white;
+        text-decoration: none;
+        border: 1px solid white;
+        padding: 20px 10px 20px 10px;
+        font-size: 12px;
+        transition: 0.3s ease;
+        
+    }
+    .file a:hover{
+        background-color:white;
+        color: black;
+    }      
+.img_flight img{
+    height: 70vh;
+    width: 100%;
+
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition:all 2s ease;
+    }
+    .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+    }
+    @media screen and  (max-width:600px){
+        .content{
+            font-size: 1.1rem;
+            transform: translateY(350%);
+            top: 20%;
+        }
+        nav ul li{
+            display: none;
+        }
+        .logo{
+            position: fixed;
+            width: 45%;
+            margin-left: 26%;
+        }
+        .para{
+            display: grid;
+            row-gap: 30px;
+            padding: 40px;
+        }
+        .middle{
+            height:150vh;
+        }
+        .split{
+            display: grid;
+        }
+        .content2 h1{
+            font-size: 2.1rem;
+        }
+        .content2{
+            padding: 10%;
+        }
+        .split img{
+            width: 70%;
+           margin-left: 15%;
+           margin-top: 10%;
+        }
+        .content2{
+            padding-top: 100px;
+        }
+        .content2 h1{
+            font-size: 1.7rem;
+        }
+        .content2 p{
+            font-size: 15px;
+        }
+        .social{
+            display: grid;
+        }
+        .split{
+            display:grid;
+        }
+        .social .large{
+           
+           margin-left: 10px;
+       }
+       .social span{
+           left: 2px;
+       }
+       .img_flight{
+        background-position: center    ;  
+        background-size: cover;
+      }
+      .file{
+          margin-top: 10%;
+      }
+     .guid{
+         width: 100%;
+         height: 50vh;
+     }
+
+      
+        
+    }
